@@ -1,4 +1,4 @@
-# SSH и ICMP снаружи, любой трафик внутри VPC, исходящий без ограничений.
+# SSH и ICMP снаружи, любой трафик внутри VPC, исходящий без ограничений
 resource "yandex_vpc_security_group" "vm" {
   name       = "${var.project_name}-vm-sg"
   network_id = yandex_vpc_network.main.id

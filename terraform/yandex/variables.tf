@@ -94,6 +94,12 @@ variable "vm_core_fraction" {
 
 variable "vm_disk_size" {
   type        = number
-  description = "Размер загрузочного диска, ГБ"
-  default     = 10
+  description = "Размер загрузочного диска тестовых ВМ, ГБ"
+  default     = 8
+}
+
+variable "nat_disk_size" {
+  type        = number
+  description = "Размер диска NAT-инстанса, ГБ"
+  default     = 4
 }

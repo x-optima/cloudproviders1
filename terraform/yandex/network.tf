@@ -1,4 +1,4 @@
-# Пустая VPC, внутри две подсети в одной зоне.
+# Пустая VPC, внутри две подсети в одной зоне
 resource "yandex_vpc_network" "main" {
   name = "${var.project_name}-net"
 }

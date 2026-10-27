@@ -19,7 +19,7 @@ resource "yandex_compute_instance" "nat" {
   boot_disk {
     initialize_params {
       image_id = var.nat_image_id
-      size     = var.vm_disk_size
+      size     = var.nat_disk_size
       type     = "network-hdd"
     }
   }
