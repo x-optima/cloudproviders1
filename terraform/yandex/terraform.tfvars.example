@@ -1,0 +1,12 @@
+# Шаблон: cp terraform.tfvars.example terraform.tfvars
+
+cloud_id  = "b1gxxxxxxxxxxxxxxxxx"
+folder_id = "b1gxxxxxxxxxxxxxxxxx"
+
+default_zone = "ru-central1-a"
+project_name = "netology-net"
+
+service_account_key_file = "~/.authorized_key.json"
+
+ssh_public_key = "ssh-ed25519 AAAA... user@host"
+vm_user        = "ubuntu"

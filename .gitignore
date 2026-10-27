@@ -1,0 +1,26 @@
+# Terraform: state и служебные файлы
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+
+# Переменные с реальными значениями; в Git только шаблоны *.example
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Ключи и доступы
+authorized_key.json
+*.pem
+*.key
+.env
+
+# Заметки
+LONGRID.md
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+*.swp
