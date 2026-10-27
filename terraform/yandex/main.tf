@@ -1,4 +1,4 @@
-# Образ по семейству: подтягивается актуальная сборка Ubuntu 22.04.
+# Образ тестовых ВМ по семейству.
 data "yandex_compute_image" "ubuntu" {
   family = var.vm_image_family
 }

@@ -62,7 +62,7 @@
 ## Запуск
 
 1. Скопировать `terraform/yandex/terraform.tfvars.example` в `terraform/yandex/terraform.tfvars` и заполнить: идентификаторы облака и каталога, путь к ключу сервисного аккаунта, публичный SSH-ключ. Без этого файла скрипт останавливается и печатает команду копирования.
-2. Запустить `./deploy_yandex.sh` из корня проекта. Скрипт выполнит `terraform init`, `terraform apply` и напечатает адреса машин.
+2. Запустить `./deploy_yandex.sh` из корня проекта. Скрипт выполнит `terraform init` и `terraform apply`.
 3. Проверить интернет с публичной и с приватной машины. Адреса и строки `ssh` печатает `terraform output`.
 4. Удалить ресурсы: `./destroy_yandex.sh`, скрипт спросит подтверждение.
 
@@ -85,4 +85,4 @@
 
 ## Что не попадает в репозиторий
 
-Файлы состояния Terraform, `terraform.tfvars` и ключи доступа перечислены в [.gitignore](.gitignore). В репозитории остаются только шаблоны `*.tfvars.example`.
+Файлы состояния Terraform, `terraform.tfvars` и ключи доступа перечислены в [.gitignore](.gitignore). Из значений переменных в репозитории только шаблон `terraform.tfvars.example`.

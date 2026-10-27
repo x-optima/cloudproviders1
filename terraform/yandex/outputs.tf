@@ -25,8 +25,5 @@ output "ssh_public_vm" {
 
 output "ssh_private_vm" {
   description = "Подключение к приватной ВМ через публичную"
-  value = join("", [
-    "ssh -J ${var.vm_user}@${yandex_compute_instance.public.network_interface[0].nat_ip_address} ",
-    "${var.vm_user}@${yandex_compute_instance.private.network_interface[0].ip_address}"
-  ])
+  value       = "ssh -J ${var.vm_user}@${yandex_compute_instance.public.network_interface[0].nat_ip_address} ${var.vm_user}@${yandex_compute_instance.private.network_interface[0].ip_address}"
 }

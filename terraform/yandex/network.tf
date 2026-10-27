@@ -22,7 +22,7 @@ resource "yandex_vpc_route_table" "private" {
   }
 }
 
-# Адреса из этой подсети наружу не выходят, только через NAT-инстанс.
+# Приватная подсеть: наружу только через NAT-инстанс.
 resource "yandex_vpc_subnet" "private" {
   name           = "private"
   zone           = var.default_zone

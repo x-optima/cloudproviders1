@@ -9,4 +9,3 @@ project_name = "netology-net"
 service_account_key_file = "~/.authorized_key.json"
 
 ssh_public_key = "ssh-ed25519 AAAA... user@host"
-vm_user        = "ubuntu"
